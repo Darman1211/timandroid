@@ -27,7 +27,7 @@
                             </small>
                             <br>
                             <small>
-                                {{ __('Username') }} <strong>admin@argon.com</strong>
+                                {{ __('Username') }} <strong>admin@darman.com</strong>
                                 {{ __('Password') }} <strong>secret</strong>
                             </small>
                         </div>

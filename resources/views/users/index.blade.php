@@ -5,7 +5,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Argon Dashboard') }}</title>
+    <title>{{ config('app.name', 'Darman Dashboard') }}</title>
     <!-- Favicon -->
     <link href="{{ asset('argon') }}/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
@@ -108,28 +108,27 @@
             <li class="nav-item">
                 <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                     <i class="fab fa-laravel" style="color: #f4645f;"></i>
-                    <span class="nav-link-text" style="color: #f4645f;">Laravel Examples</span>
+                    <span class="nav-link-text" style="color: #f4645f;">Data Kelas</span>
                 </a>
 
                 <div class="collapse show" id="navbar-examples">
                     <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('profile.edit') }}">
-                                User profile
+                                Input Data Kelas
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('user.index') }}">
-                                User Management
+                                Tampilan Data Kelas
                             </a>
                         </li>
                     </ul>
                 </div>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="ni ni-planet text-blue"></i> Icons
+                    <i class="ni ni-planet text-blue"></i> Cetak
                 </a>
             </li>
             <li class="nav-item">
