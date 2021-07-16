@@ -84,19 +84,19 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="ni ni-single-02" style="color: #f4645f;"></i>
-                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Data Siswa') }}</span>
+                        <span class="nav-link-text" style="color: #f4645f;">{{ __('Data Peserta') }}</span>
                     </a>
 
                     <div class="collapse show" id="navbar-examples">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="/kelas">
-                                    {{ __('Input Data Siswa') }}
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
+                                    {{ __('Input Data Peserta') }}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
-                                    {{ __('Tampilan Data Siswa') }}
+                                <a class="nav-link" href="/peserta">
+                                    {{ __('Tampilan Data Peserta') }}
                                 </a>
                             </li>
                         </ul>
@@ -116,7 +116,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('user.index') }}">
+                                <a class="nav-link" href="/kelas">
                                     {{ __('Tampilan Data Kelas') }}
                                 </a>
                             </li>

@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/peserta','PesertaController@index');
 Route::get('/kelas','KelasController@index');
 
 Auth::routes();
