@@ -25,7 +25,7 @@ class PesertaController extends Controller
      */
     public function create()
     {
-        //
+        return view('input');
     }
 
     /**

@@ -5,14 +5,35 @@
 
 <div class="table-responsive">
     <div>
+    <!-- cari data dan tambah data -->
+    <form style="margin-top:20px; margin-left:20px">
+    <div class="row">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Cari Peserta..">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+            <button formaction="peserta/cari" type="button" class="btn btn-default">Cari</button>
+
+            <button method="GET" formaction="peserta/create" type="submit" class="btn btn-default">Input Peserta</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+</div>
+    </form>
         <table class="table align-items-center table-dark">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col" >Nomor Peserta</th>
                     <th scope="col" >Nama Peserta</th>
-                    <th scope="col" >Kode Kelas</th>
                     <th scope="col" >Nama Kelas</th>
-                    <th scope="col" >Tempat Tanggal Lahir</th>
+                    <th scope="col" >Tempat Lahir</th>
+                    <th scope="col" >Tanggal Lahir</th>
                     <th scope="col" >Alamat</th>
                     <th scope="col" >Email</th>
                     <th scope="col"></th>
@@ -22,9 +43,9 @@
                 <tr>
                     <td>{{ $p->no_peserta }}</td>
                     <td>{{ $p->nama_peserta}}</td>
-                    <td>{{ $p->kd_kelas }}</td>
                     <td>{{ $p->nama_kelas }}</td>
-                    <td>{{ $p->ttl }}</td>
+                    <td>{{ $p->tempat_lahir }}</td>
+                    <td>{{ $p->tanggal_lahir }}</td>
                     <td>{{ $p->alamat }}</td>
                     <td>{{ $p->email }}</td>
                     <td class="text-left">
@@ -39,11 +60,13 @@
                         </div>
                     </td>
                 </tr>
-                @endforeach
+               
         </table>
         
         </div>
-        
+
+        @endforeach
+
         @include('layouts.footers.auth')
            
         @endsection
