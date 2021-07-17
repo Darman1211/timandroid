@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::get('/peserta','PesertaController@index');
 Route::get('/kelas','KelasController@index');
+Route::get('/kelas/inputkelas','KelasController@create');
 
 Auth::routes();
 

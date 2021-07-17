@@ -3,7 +3,25 @@
 @section('content')
     @include('layouts.headers.cards')
 
-<div class="table-responsive">
+    <div class="table-responsive">
+        <!-- Cari Data dan Tambah Data -->
+        <form style="margin-top:20px; margin-left:20px" method="GET" action="kelas/cari">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="email" class="form-control"
+                        id="exampleFormControlInput1" placeholder="Cari Kelas">
+                    </div>
+                </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default">Cari</button>
+                            <button type="button" class="btn btn-default">Input Peserta</button>
+            </div>
+            </div>
+            <div class="col-md-6"> 
+            </div>
+                </div>
     <div>
         <table class="table align-items-center table-dark">
             <thead class="thead-dark">
@@ -39,11 +57,11 @@
                         </div>
                     </td>
                 </tr>
-                @endforeach
+               
         </table>
         
         </div>
-        
+        @endforeach
         @include('layouts.footers.auth')
            
         @endsection
