@@ -23,6 +23,7 @@ Route::get('/peserta/create','PesertaController@create');
 
 //kelas
 Route::get('/kelas','KelasController@index');
+Route::get('/kelas/inputkelas','KelasController@create');
 
 Auth::routes();
 
