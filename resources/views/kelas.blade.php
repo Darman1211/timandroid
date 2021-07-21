@@ -16,7 +16,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <button type="button" class="btn btn-default">Cari</button>
-                        <button type="button" class="btn btn-default">Input Kelas</button>
+                        <button type="submit" formaction="/kelas/inputkelas" class="btn btn-default">Input Kelas</button>
         </div>
         </div>
         <div class="col-md-6"> 

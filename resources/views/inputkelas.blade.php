@@ -5,17 +5,17 @@
         'title' => __('Input Data Kelas')
     ])   
 <!-- Kode Kelas -->
-    <div class="container-fluid mt--7">
+    <div style="margin-left:15%" class="container-fluid mt--7">
             <div class="col-xl-8 order-xl-1">
                 <div class="card bg-secondary shadow">
                     <div class="card-header bg-white border-0">
                     </div>
                     <div class="card-body">
-                        <form method="post" action="/peserta/store" autocomplete="off">
+                        <form method="post" action="/kelas/store" autocomplete="off">
                         {{ csrf_field() }}
 
                             <div class="pl-lg-4">
-                                <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
+                        <!--        <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                     <label class="form-control-label" for="input-name">{{ __('Kode Kelas') }}</label>
                                     <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Isikan Kode Kelas" required autofocus>
 
@@ -24,22 +24,16 @@
                                             <strong>{{ $errors->first('name') }}</strong>
                                         </span>
                                     @endif
-                                </div>
+                                </div> -->
 <!-- Nama Kelas -->
-                        <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
-                            <label class="form-control-label" for="input-name">{{ __('Nama Kelas') }}</label>
-                            <input type="text" name="name" id="input-name" class="form-control form-control-alternative{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Isikan Nama Kelas" required autofocus>
-
-                            @if ($errors->has('name'))
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $errors->first('name') }}</strong>
-                                </span>
-                            @endif
+                        <div class="form-group">
+                            <label class="form-control-label">{{ __('Nama Kelas') }}</label>
+                            <input type="text" name="nama" class="form-control" placeholder="Isikan Nama Kelas" required="required">
                         </div>
 
 <!-- Tanggal Mulai -->
-                                <div class="form-group{{ $errors->has('tgll') ? ' has-danger' : '' }}">
-                                    <label class="form-control-label" for="input-tgll">{{ __('Tanggal Mulai') }}</label>
+                                <div class="form-group">
+                                    <label class="form-control-label">{{ __('Tanggal Mulai') }}</label>
                                     <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
