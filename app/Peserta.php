@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Peserta extends Model
 {
+    protected $table = "peserta";
     protected $fillable = [
-        'no_peserta', 'nama_peserta', 'nama_kelas', 'tempat_lahir', 'tanggal_lahir', 'alamat', 'email',
+        'nama_peserta','tempat_lahir','tanggal_lahir','alamat','email',
     ];
+
+    public function kelas()
+    {
+        return $this->hasMany('App\Peserta'); 
+    }
 }

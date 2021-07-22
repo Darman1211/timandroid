@@ -53,10 +53,10 @@
                 </div>
             </td>
         </tr>
-        @endforeach
+        
 </table>
 
- 
+@endforeach
 </div>
 
 @include('layouts.footers.auth')

@@ -20,6 +20,12 @@ Route::get('/', function () {
 //peserta
 Route::get('/peserta','PesertaController@index');
 Route::get('/peserta/create','PesertaController@create');
+Route::post('/peserta/store','PesertaController@store');
+Route::get('/peserta/edit/{id}','PesertaController@edit');
+Route::put('/peserta/update/{id}','PesertaController@update');
+Route::get('/peserta/hapus/{id}','PesertaController@hapus');
+//cari
+Route::get('/peserta/cari','PesertaController@cari');
 
 //kelas
 Route::get('/kelas','KelasController@index');

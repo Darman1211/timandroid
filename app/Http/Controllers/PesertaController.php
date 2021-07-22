@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Peserta;
+use App\Kelas;
 use Illuminate\Http\Request;
 
 class PesertaController extends Controller
@@ -25,7 +26,8 @@ class PesertaController extends Controller
      */
     public function create()
     {
-        return view('input');
+        $kelas = Kelas::all();
+        return view('inputpeserta', compact('kelas'));
     }
 
     /**
@@ -36,7 +38,9 @@ class PesertaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+ 
+        Peserta::create($request->all());
+        return redirect('/peserta');
     }
 
     /**
@@ -56,9 +60,10 @@ class PesertaController extends Controller
      * @param  \App\Peserta  $peserta
      * @return \Illuminate\Http\Response
      */
-    public function edit(Peserta $peserta)
+    public function edit($id)
     {
-        //
+        $peserta = Peserta::find($id);
+        return view('peserta_edit', ['peserta' => $peserta]);
     }
 
     /**
@@ -68,9 +73,16 @@ class PesertaController extends Controller
      * @param  \App\Peserta  $peserta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Peserta $peserta)
+    public function update($id, Request $request)
     {
-        //
+        $peserta = Peserta::find($id);
+        $peserta->nama_peserta = $request->nama_peserta;
+        $peserta->tempat_lahir = $request->tempat_lahir;
+        $peserta->tanggal_lahir = $request->tanggal_lahir;
+        $peserta->alamat = $request->alamat;
+        $peserta->email = $request->email;
+        $peserta->save();
+        return redirect('/peserta');
     }
 
     /**
@@ -79,8 +91,24 @@ class PesertaController extends Controller
      * @param  \App\Peserta  $peserta
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Peserta $peserta)
+    public function hapus($id)
     {
-        //
+        $peserta = Peserta::find($id);
+        $peserta->delete();
+        return redirect('/peserta');
+    }
+
+    public function cari(Request $request)
+    {
+        $cari = $request->cari;
+ 
+    	// mengambil data dari table peserta sesuai pencarian data
+		$peserta = Peserta::query()
+        ->where('id', 'LIKE', "%{$cari}%") 
+        ->orWhere('nama_peserta', 'LIKE', "%{$cari}%") 
+        ->get();
+ 
+    	// mengirim data ke view peserta
+		return view('peserta',['peserta' => $peserta]);
     }
 }
