@@ -30,6 +30,10 @@ Route::get('/peserta/cari','PesertaController@cari');
 //kelas
 Route::get('/kelas','KelasController@index');
 Route::get('/kelas/inputkelas','KelasController@create');
+Route::post('/kelas/store','KelasController@store');
+Route::get('/kelas/edit/{id}','KelasController@edit');
+Route::put('/kelas/update/{id}','KelasController@update');
+Route::get('/kelas/hapus/{id}','KelasController@hapus');
 
 Auth::routes();
 

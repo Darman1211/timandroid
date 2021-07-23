@@ -14,11 +14,12 @@ class CreateKelasTable extends Migration
     public function up()
     {
         Schema::create('kelas', function (Blueprint $table) {
-            $table->id("kd_kelas");
+            $table->id();
             $table->String("nama_kelas");
-            $table->Date("tgl_mulai");
-            $table->Date("tgl_selesai");
+            $table->String("tgl_mulai");
+            $table->String("tgl_selesai");
             $table->String("total_jam");
+            $table->timestamps();
         });
     }
 
