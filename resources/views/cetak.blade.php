@@ -22,7 +22,7 @@
                             </label>
                             <select class="form-control" id="id_peserta-option" name="id_peserta">
                             @foreach ($peserta as $peserta)
-                                <option value="{{ $peserta->id_peserta }}">{{ $peserta->id }}</option>
+                                <option value="{{ $peserta->id_peserta }}">{{ $peserta->id_peserta }}</option>
                             @endforeach
                             </select>
                         </div>
@@ -34,7 +34,7 @@
                             </label>
                             <select class="form-control" id="id_kelas-option" name="id_kelas">
                             @foreach ($kelas as $kelas)
-                                <option value="{{ $kelas->id_kelas }}">{{ $kelas->id }}</option>
+                                <option value="{{ $kelas->id_kelas }}">{{ $kelas->id_kelas }}</option>
                             @endforeach
                             </select>
                         </div>

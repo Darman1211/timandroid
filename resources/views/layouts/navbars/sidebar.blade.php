@@ -143,6 +143,11 @@
                         <i class="ni ni-send text-blue"></i> {{ __('Cetak Sertifikat') }}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cetak/view">
+                        <i class="ni ni-send text-blue"></i> {{ __('Data Cetak Sertifikat') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
