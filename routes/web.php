@@ -24,6 +24,7 @@ Route::post('/peserta/store','PesertaController@store');
 Route::get('/peserta/edit/{id}','PesertaController@edit');
 Route::put('/peserta/update/{id}','PesertaController@update');
 Route::get('/peserta/hapus/{id}','PesertaController@hapus');
+
 //cari
 Route::get('/peserta/cari','PesertaController@cari');
 
@@ -34,6 +35,11 @@ Route::post('/kelas/store','KelasController@store');
 Route::get('/kelas/edit/{id}','KelasController@edit');
 Route::put('/kelas/update/{id}','KelasController@update');
 Route::get('/kelas/hapus/{id}','KelasController@hapus');
+
+
+//cetak sertifikat
+Route::get('/cetak','CetakController@index');
+Route::post('/cetak/store','CetakController@store');
 
 Auth::routes();
 

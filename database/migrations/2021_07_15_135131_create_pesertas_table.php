@@ -17,7 +17,7 @@ class CreatePesertasTable extends Migration
             $table->id();
             $table->string("nama_peserta");
             $table->string("tempat_lahir");
-            $table->string("tanggal_lahir");
+            $table->date("tanggal_lahir");
             $table->string("alamat");
             $table->string("email");
             $table->timestamps();

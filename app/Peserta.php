@@ -11,8 +11,5 @@ class Peserta extends Model
         'nama_peserta','tempat_lahir','tanggal_lahir','alamat','email',
     ];
 
-    public function kelas()
-    {
-        return $this->hasMany('App\Peserta'); 
-    }
+    
 }

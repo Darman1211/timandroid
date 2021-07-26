@@ -69,6 +69,32 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Admin') }}
                     </a>
                 </li>
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/peserta/create">
+                        <i class="ni ni-fat-add text-blue"></i> {{ __('Input Data Peserta') }}
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/peserta">
+                        <i class="ni ni-bullet-list-67 text-blue"></i> {{ __('Tampilan Data Peserta') }}
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/kelas/inputkelas">
+                        <i class="ni ni-fat-add text-blue"></i> {{ __('Input Data Kelas') }}
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/kelas">
+                        <i class="ni ni-bullet-list-67 text-blue"></i> {{ __('Tampilan Data Kelas') }}
+                    </a>
+                </li>
+<!--
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
                         <i class="ni ni-single-02" style="color: #f4645f;"></i>
@@ -111,10 +137,10 @@
                         </ul>
                     </div>
                 </li>
-
+-->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="ni ni-laptop text-blue"></i> {{ __('Cetak Sertifikat') }}
+                    <a class="nav-link" href="/cetak">
+                        <i class="ni ni-send text-blue"></i> {{ __('Cetak Sertifikat') }}
                     </a>
                 </li>
             </ul>
