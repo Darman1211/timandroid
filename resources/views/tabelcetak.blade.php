@@ -6,12 +6,12 @@
 <div class="table-responsive">
     <div>
     <!-- Cari Data dan Tambah Data -->
-    <form style="margin-top:20px; margin-left:20px" action="/cetak" method="GET">
+    <form style="margin-top:20px; margin-left:20px" action="/kelas/cari" method="GET">
         <div class="row">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                <a href="/cetak" class="btn btn-default">Cetak Sertifikat</a>
+                <a href="/kelas/inputkelas" class="btn btn-default">Cetak Sertifikat</a>
                 </div>
             </div>
         </div>
