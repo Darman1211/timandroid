@@ -41,6 +41,7 @@ Route::get('/kelas/hapus/{id}','KelasController@hapus');
 Route::get('/cetak','CetakController@input');
 Route::get('/cetak/view','CetakController@view');
 Route::post('/cetak/store','CetakController@store');
+Route::get('/cetak/sertifikat','CetakController@sertifikat');
 
 Auth::routes();
 

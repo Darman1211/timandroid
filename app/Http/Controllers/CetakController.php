@@ -31,5 +31,9 @@ class CetakController extends Controller
         return view('tabelcetak', ['cetak'=>$cetak]);
 
     }
+    public function sertifikat()
+    {
+        return view('sertifikat');
+    }
     
 }

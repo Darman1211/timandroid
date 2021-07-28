@@ -45,7 +45,7 @@
             <td>{{ $c->total_jam }}</td>
             <td>{{ $c->tgl_keluar_sertifikat }}</td>
             <td class="text-left">
-                <a href="#" class="btn btn-primary">Cetak</a>
+                <a href="/cetak/sertifikat" class="btn btn-primary">Cetak</a>
             </td>
         </tr>
         @endforeach
