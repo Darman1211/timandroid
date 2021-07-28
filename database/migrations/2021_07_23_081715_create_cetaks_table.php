@@ -13,8 +13,9 @@ class CreateCetaksTable extends Migration
      */
     public function up()
     {
-        Schema::create('cetak', function (Blueprint $table) {
+        Schema::create('cetaks', function (Blueprint $table) {
             $table->id("id_cetak");
+            $table->String("no_sertifikat");
             $table->integer("id_peserta");
             $table->integer("id_kelas");
             $table->date("tgl_keluar_sertifikat");

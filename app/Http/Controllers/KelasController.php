@@ -73,6 +73,7 @@ class KelasController extends Controller
     public function update($id, Request $request)
     {
         $kelas = Kelas::find($id);
+        $kelas->kd_kelas = $request->kd_kelas;
         $kelas->nama_kelas = $request->nama_kelas;
         $kelas->tgl_mulai = $request->tgl_mulai;
         $kelas->tgl_selesai = $request->tgl_selesai;

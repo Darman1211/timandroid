@@ -15,6 +15,8 @@
                 {{ csrf_field() }}
                     <div class="pl-lg-4">
 
+                    <input type="hidden" name="no_sertifikat" class="form-control" required="required" value="1">
+
                         <!-- Id Peserta -->
 
                         <div class="form-group">
@@ -22,7 +24,7 @@
                             </label>
                             <select class="form-control" id="id_peserta-option" name="id_peserta">
                             @foreach ($peserta as $peserta)
-                                <option value="{{ $peserta->id_peserta }}">{{ $peserta->id_peserta }}</option>
+                                <option value="{{ $peserta->id }}">{{ $peserta->id }}</option>
                             @endforeach
                             </select>
                         </div>
@@ -34,7 +36,7 @@
                             </label>
                             <select class="form-control" id="id_kelas-option" name="id_kelas">
                             @foreach ($kelas as $kelas)
-                                <option value="{{ $kelas->id_kelas }}">{{ $kelas->id_kelas }}</option>
+                                <option value="{{ $kelas->id }}">{{ $kelas->id }}</option>
                             @endforeach
                             </select>
                         </div>

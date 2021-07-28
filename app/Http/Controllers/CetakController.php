@@ -24,8 +24,8 @@ class CetakController extends Controller
     }
     public function view()
     {
-        $cetak = Cetak::join('peserta', 'peserta.id_peserta', '=', 'cetak.id_peserta')
-                        ->join('kelas', 'kelas.id_kelas', '=', 'cetak.id_kelas')
+        $cetak = Cetak::join('pesertas', 'pesertas.id', '=', 'cetaks.id_peserta')
+                        ->join('kelas', 'kelas.id', '=', 'cetaks.id_kelas')
                         ->get();
         // dd($cetak);
         return view('tabelcetak', ['cetak'=>$cetak]);

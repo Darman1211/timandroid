@@ -29,6 +29,7 @@
     <table class="table align-items-center table-dark">
     <thead class="thead-dark">
         <tr>
+            <th scope="col">Kode Kelas</th>
             <th scope="col">Nama Kelas</th>
             <th scope="col">Tanggal Mulai</th>
             <th scope="col">Tanggal Selesai</th>
@@ -38,6 +39,7 @@
     </thead>
     @foreach($kelas as $k)
         <tr>
+            <td>{{ $k->kd_kelas }}</td>
             <td>{{ $k->nama_kelas }}</td>
             <td>{{ $k->tgl_mulai }}</td>
             <td>{{ $k->tgl_selesai }}</td>

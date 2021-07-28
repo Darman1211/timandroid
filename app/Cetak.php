@@ -6,17 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cetak extends Model
 {
-    protected $table="cetak";
+    protected $table="cetaks";
     protected $fillable = [
-        'id_peserta','id_kelas','tgl_keluar_sertifikat',
+        'no_sertifikat','id_peserta','id_kelas','tgl_keluar_sertifikat',
     ];
 
     public function kelas()
     {
-        return $this->hasMany('App\Cetak'); 
+        return $this->belongsTo('App\Kelas'); 
     }
     public function peserta()
     {
-        return $this->hasMany('App\Cetak'); 
+        return $this->belongsTo('App\Peserta'); 
     }
 }

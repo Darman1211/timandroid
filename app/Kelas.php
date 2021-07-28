@@ -8,6 +8,6 @@ class Kelas extends Model
 {
     protected $table="kelas";
     protected $fillable = [
-        'nama_kelas','tgl_mulai','tgl_selesai','total_jam',
+        'kd_kelas','nama_kelas','tgl_mulai','tgl_selesai','total_jam',
     ];
 }

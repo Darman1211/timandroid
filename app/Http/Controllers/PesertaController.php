@@ -104,7 +104,7 @@ class PesertaController extends Controller
  
     	// mengambil data dari table peserta sesuai pencarian data
 		$peserta = Peserta::query()
-        ->where('id', 'LIKE', "%{$cari}%") 
+        ->where('id_peserta', 'LIKE', "%{$cari}%") 
         ->orWhere('nama_peserta', 'LIKE', "%{$cari}%") 
         ->get();
  

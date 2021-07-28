@@ -18,6 +18,12 @@
                         <!-- Nama Kelas -->
 
                         <div class="form-group">
+                            <label class="form-control-label">Kode Kelas
+                            </label>
+                            <input type="text" name="kd_kelas" class="form-control" placeholder="Kode Kelas" required="required">
+                        </div>
+
+                        <div class="form-group">
                             <label class="form-control-label">Nama Kelas
                             </label>
                             <input type="text" name="nama_kelas" class="form-control" placeholder="Nama Kelas" required="required">
