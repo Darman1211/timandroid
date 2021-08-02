@@ -99,4 +99,8 @@ class KelasController extends Controller
     {
         //
     }
+    public function test()
+    {
+        return view('tampilan');
+    }
 }

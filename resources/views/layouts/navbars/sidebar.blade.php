@@ -148,6 +148,11 @@
                         <i class="ni ni-send text-blue"></i> {{ __('Data Cetak Sertifikat') }}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kelas/test">
+                        <i class="ni ni-send text-blue"></i> {{ __('Test') }}
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

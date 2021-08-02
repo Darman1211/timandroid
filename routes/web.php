@@ -36,6 +36,9 @@ Route::get('/kelas/edit/{id}','KelasController@edit');
 Route::put('/kelas/update/{id}','KelasController@update');
 Route::get('/kelas/hapus/{id}','KelasController@hapus');
 
+//test
+Route::get('/kelas/test','KelasController@test');
+
 
 //cetak sertifikat
 Route::get('/cetak','CetakController@input');
