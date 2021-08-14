@@ -44,7 +44,7 @@ Route::get('/kelas/test','KelasController@test');
 Route::get('/cetak','CetakController@input');
 Route::get('/cetak/view','CetakController@view');
 Route::post('/cetak/store','CetakController@store');
-Route::get('/cetak/sertifikat','CetakController@sertifikat');
+Route::get('/cetak/sertifikat/{id}','CetakController@sertifikat');
 
 Auth::routes();
 

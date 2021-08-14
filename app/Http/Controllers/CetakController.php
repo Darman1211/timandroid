@@ -31,8 +31,13 @@ class CetakController extends Controller
         return view('tabelcetak', ['cetak'=>$cetak]);
 
     }
-    public function sertifikat()
+    public function sertifikat($id)
     {
+        $cetak = Cetak::join('pesertas', 'pesertas.id', '=', 'cetaks.id_peserta')
+                        ->join('kelas', 'kelas.id', '=', 'cetaks.id_kelas')
+                        ->where('cetaks.id_cetak',$id)
+                        ->get();
+                        dd($cetak);
         return view('sertifikat');
     }
     
