@@ -73,25 +73,25 @@
                 
                 <li class="nav-item">
                     <a class="nav-link" href="/peserta/create">
-                        <i class="ni ni-fat-add text-blue"></i> {{ __('Input Data Peserta') }}
+                        <i class="fa fa-user-plus text-blue"></i> {{ __('Input Data Peserta') }}
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/peserta">
-                        <i class="ni ni-bullet-list-67 text-blue"></i> {{ __('Tampilan Data Peserta') }}
+                        <i class="fa fa-users text-blue"></i> {{ __('Tampilan Data Peserta') }}
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/kelas/inputkelas">
-                        <i class="ni ni-fat-add text-blue"></i> {{ __('Input Data Kelas') }}
+                        <i class="fa fa-plus-square  text-blue"></i> {{ __('Input Data Kelas') }}
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="/kelas">
-                        <i class="ni ni-bullet-list-67 text-blue"></i> {{ __('Tampilan Data Kelas') }}
+                        <i class="fa fa-book text-blue"></i> {{ __('Tampilan Data Kelas') }}
                     </a>
                 </li>
 <!--
@@ -140,17 +140,12 @@
 -->
                 <li class="nav-item">
                     <a class="nav-link" href="/cetak">
-                        <i class="ni ni-send text-blue"></i> {{ __('Cetak Sertifikat') }}
+                        <i class="fa fa-print text-blue"></i> {{ __('Cetak Sertifikat') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/cetak/view">
-                        <i class="ni ni-send text-blue"></i> {{ __('Data Cetak Sertifikat') }}
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/kelas/test">
-                        <i class="ni ni-send text-blue"></i> {{ __('Test') }}
+                        <i class="fa fa-list-alt text-blue"></i> {{ __('Data Cetak Sertifikat') }}
                     </a>
                 </li>
             </ul>
