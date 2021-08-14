@@ -36,7 +36,7 @@
 	</tr>
 	<tr>
 		<td rowspan="2">&nbsp</td>	
-		<td style="line-height:0px"><h1>Yuliana Susanti</h1>
+		<td style="line-height:0px"><h1>{{ $cetak->nama_peserta }}</h1>
         Tempat & Tanggal lahir: Air Merah, 07 Juli 2003</td>
 	</tr>
 	<tr>

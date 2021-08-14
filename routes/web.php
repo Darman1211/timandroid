@@ -36,15 +36,13 @@ Route::get('/kelas/edit/{id}','KelasController@edit');
 Route::put('/kelas/update/{id}','KelasController@update');
 Route::get('/kelas/hapus/{id}','KelasController@hapus');
 
-//test
-Route::get('/kelas/test','KelasController@test');
-
-
 //cetak sertifikat
 Route::get('/cetak','CetakController@input');
 Route::get('/cetak/view','CetakController@view');
 Route::post('/cetak/store','CetakController@store');
-Route::get('/cetak/sertifikat','CetakController@sertifikat');
+
+
+Route::get('/cetak/sertifikat/{id_cetak}','CetakController@sertifikat');
 
 Auth::routes();
 
