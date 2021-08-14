@@ -26,7 +26,7 @@
 	</tr>
 	<tr>
 		<td>&nbsp</td>
-		<td>Nomor : BG.SO.2021.07.001</br>
+		<td>Nomor : {{ $cetak->no_sertifikat }}</br>
         diberikan kepada :
         </td>
 	</tr>
@@ -37,7 +37,7 @@
 	<tr>
 		<td rowspan="2">&nbsp</td>	
 		<td style="line-height:0px"><h1>{{ $cetak->nama_peserta }}</h1>
-        Tempat & Tanggal lahir: Air Merah, 07 Juli 2003</td>
+        Tempat & Tanggal lahir: {{ $cetak->tempat_lahir }}, {{ $cetak->tanggal_lahir}}</td>
 	</tr>
 	<tr>
 		<td>&nbsp</td>
