@@ -145,11 +145,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/cetak/view">
-<<<<<<< HEAD
-                        <i class="fa fa-list-alt text-blue"></i> {{ __('Data Cetak Sertifikat') }}
-=======
                         <i class="ni ni-send text-blue"></i> {{ __('Data Cetak Sertifikat') }}
->>>>>>> d25b0f60cc5f4487420aa273d30a8cbf41d8ef9b
                     </a>
                 </li>
             </ul>
