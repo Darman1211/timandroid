@@ -39,7 +39,7 @@
                             </thead>
                             @foreach($cetak as $c)
                                 <tr>
-                                    <td>BG.{{ $c->kd_kelas }}.{{ date("Y") }}.{{ date("m") }}.{{ $c->id_cetak }}</td>
+                                    <td>{{ $c->no_sertifikat }}</td>
                                     <td>{{ $c->nama_peserta }}</td>
                                     <td>{{ $c->tempat_lahir }}</td>
                                     <td>{{ $c->tanggal_lahir }}</td>
@@ -58,6 +58,7 @@
                 </div>
             </div>
         </div>
+        @include('layouts.footers.auth')
     </div>
 @endsection
 

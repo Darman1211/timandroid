@@ -40,5 +40,12 @@ class CetakController extends Controller
                        
         return view('sertifikat', ['cetak'=>$cetak]);
     }
+
+    public function hapus($id)
+    {
+        $cetak = Cetak::find($id);
+        $cetak->delete();
+        return redirect('/tabelcetak');
+    }
     
 }

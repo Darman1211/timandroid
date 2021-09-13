@@ -42,6 +42,7 @@ Route::get('/cetak/view','CetakController@view');
 Route::post('/cetak/store','CetakController@store');
 Route::get('/cetak/sertifikat/{id}','CetakController@sertifikat');
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

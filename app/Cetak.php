@@ -11,6 +11,11 @@ class Cetak extends Model
         'no_sertifikat','id_peserta','id_kelas','tgl_keluar_sertifikat',
     ];
 
+    public function setNoSertifikatAttribute($value)
+    { 
+      $this->attributes['no_sertifikat'] = "BG.".$kd_kelas.".".date("Y").".".date("m");
+    }
+
     public function kelas()
     {
         return $this->belongsTo('App\Kelas'); 
